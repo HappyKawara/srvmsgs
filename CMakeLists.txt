@@ -37,9 +37,22 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Num.msg"
   "msg/Sphere.msg"
-  "srv/AddThreeInts.srv"
   "srv/TTS.srv"
   "srv/SpeechToText.srv"
+  "srv/ActionPlan.srv"
+  "srv/AddThreeInts.srv"
+  "srv/GgiLearning.srv"
+  "srv/ListenCommand.srv"
+  "srv/SetFloat.srv"
+  "srv/SetStr.srv"
+  "srv/SimpleTrg.srv"
+  "srv/SpeechRecog.srv"
+  "srv/SprInformation.srv"
+  "srv/StrToStr.srv"
+  "srv/StrTrg.srv"
+  "srv/StringToString.srv"
+  "srv/WhatDidYouSay.srv"
+  "srv/YesNo.srv"
   DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 
